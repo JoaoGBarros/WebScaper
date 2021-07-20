@@ -12,3 +12,8 @@ A tabela .csv eh composta por 4 colunas:
 
 
 Pagina de download do ChromeDriver: https://chromedriver.chromium.org/downloads
+
+Utilize o programa na mesma pasta que o ChromeDriver, caso execute o terminal o erro que aparece pode ser desconsiderado
+
+Espere a janela do Chrome fechar para abrir o arquivo .csv
+
