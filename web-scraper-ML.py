@@ -1,7 +1,10 @@
+import sys
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 import pandas as pd
+import os
 
 
 def produtoCerto(produto_encontrado, produto_procurado):
@@ -30,7 +33,9 @@ if __name__ == '__main__':
     lista_titulos = []
     lista_precos = []
     lista_fretes = []
-    local = input("Informe o path do executavel do Chrome Driver(Com o .exe): ").replace("\\", "/")  # Pede ao usuario o local do Chrome Driver
+    local = os.getcwd()  # Pede ao usuario o local do Chrome Driver
+    local = local + "/chromedriver.exe"
+    print("Espere a janela do Chrome fechar para abrir o arquivo .csv, caso o programa seja executado no terminal, o erro que aparece pode ser desconsiderado")
     navegador = webdriver.Chrome(local)   # Abre o executavel do chrome driver
     navegador.minimize_window()
     navegador.get(site)  #Entra no site
