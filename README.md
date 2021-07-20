@@ -9,3 +9,6 @@ A tabela .csv eh composta por 4 colunas:
   . Preco - Preco do anunciante
   . Frete - Caso o frete seja grátis ou não
   . Link - Link direto para o produto de sua escolha
+
+
+Pagina de download do ChromeDriver: https://chromedriver.chromium.org/downloads
