@@ -30,7 +30,7 @@ if __name__ == '__main__':
     lista_titulos = []
     lista_precos = []
     lista_fretes = []
-    local = input("Informe o path do executavel do Chrome Driver: ").replace("\\", "/")  # Pede ao usuario o local do Chrome Driver
+    local = input("Informe o path do executavel do Chrome Driver(Com o .exe): ").replace("\\", "/")  # Pede ao usuario o local do Chrome Driver
     navegador = webdriver.Chrome(local)   # Abre o executavel do chrome driver
     navegador.minimize_window()
     navegador.get(site)  #Entra no site
